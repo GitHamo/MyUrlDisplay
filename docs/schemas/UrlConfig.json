@@ -1,0 +1,40 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "UrlConfig",
+    "description": "Aggregate root representing a user's URL configuration.",
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer",
+        "description": "Auto-incremented identifier for the configuration."
+      },
+      "userId": {
+        "type": "integer",
+        "description": "The ID of the user owning this URL configuration."
+      },
+      "protocol": {
+        "type": "string",
+        "description": "The protocol used (e.g., http, https)."
+      },
+      "domain": {
+        "type": "string",
+        "description": "The domain name (e.g., example.com)."
+      },
+      "port": {
+        "type": "integer",
+        "description": "The port number, if specified.",
+        "nullable": true
+      },
+      "path": {
+        "type": "string",
+        "description": "The path in the URL, if specified.",
+        "nullable": true
+      },
+      "color": {
+        "type": "string",
+        "description": "The associated color representation."
+      }
+    },
+    "required": ["id", "userId", "protocol", "domain", "color"]
+  }
+  
