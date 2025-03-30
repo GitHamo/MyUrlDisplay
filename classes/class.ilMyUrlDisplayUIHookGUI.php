@@ -12,9 +12,10 @@ class ilMyUrlDisplayUIHookGUI extends ilUIHookPluginGUI
     public function getHTML(string $a_comp, string $a_part, array $a_par = []): array
     {
         if (($a_comp === self::COMPONENT_DASHBOARD || $a_comp === self::COMPONENT_PERSONAL_DESKTOP) && $a_part === self::PART_RIGHT_COLUMN) {
-            /** @var $ilUser ilObjUser */
+            /** @var ilObjUser $ilUser */
             global $ilUser;
-    
+            
+            /** @var \ILIAS\Plugins\MyUrlDisplay\MyUrlDisplayServiceInterface $service */
             $service = ilMyUrlDisplayServiceProvider::getService();
             $user_id = $ilUser->getId();
             $html = "";
