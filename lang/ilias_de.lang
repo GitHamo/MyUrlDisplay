@@ -1,0 +1,14 @@
+// 
+// German Language File for MyUrlDisplay Plugin
+//
+
+<!-- language file start -->
+myurldisplay#:#My Url Display
+cfg_block_title#:#Meine URL
+cfg_form_label_protocol#:#Protokoll
+cfg_form_label_domain#:#Domain
+cfg_form_label_port#:#Port
+cfg_form_label_path#:#Pfad
+cfg_form_label_color#:#Farbe
+cfg_form_label_save#:#Speichern
+cfg_form_message_success#:#Url-Konfiguration erfolgreich gespeichert
