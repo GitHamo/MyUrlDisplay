@@ -1,0 +1,22 @@
+{
+    "name": "ILIAS/Plugins/MyUrlDisplay",
+    "authors": [
+      {
+        "name": "Ahmed Aly Hamouda",
+        "email": "ahm3dhamouda@gmail.com"
+      }
+    ],
+    "require-dev": {
+        
+    },
+    "autoload": {
+      "psr-4": {
+        "ILIAS\\" : "../../../../src",
+        "ILIAS\\Plugins\\MyUrlDisplay\\": "src/"
+      },
+      "classmap": [
+          "../../../../../../../Services/Component/classes/"
+      ]
+    }
+  }
+  
